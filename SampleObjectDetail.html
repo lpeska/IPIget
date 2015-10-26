@@ -1,0 +1,57 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="cs">
+<head>
+<title>Antikvariát Ichtys - on-line prodej knih
+
+
+</title>
+
+<!-- jQuery is used in IPIget-->
+<script type="text/javascript" src="/jqueryui/js/jquery-1.7.1.min.js"></script>   
+    
+<!-- link IPIget component -->    
+<script language="JavaScript" type="text/javascript" src="IPIget/component/javascript/TraceUser.js"></script>  
+<script type="text/javascript" language="javascript" src="IPIget/component/javascript/AjaxRequest.js"></script>  
+
+<!-- static page parameters received from server side scripting:
+userID via cookie or login information
+objectID optional info whether page is about single object e.g. it is not a catalogue page
+sessionID count of the sessions of current user
+pageID identifier of the page. either directly containing page variables or they can be stored separately in the database
+pageType optional type of the page (index, catalogue, object detail...)
+-->
+            <script  type="text/javascript" language="javascript">
+                var userID = 251380 ;
+                var objectID = 13101;
+                var pageID = "zobrazit.dejiny.dejiny-narodu-ceskeho-v-cechach-a-v-morave..";    
+                var sessionID = 2;    
+                var pageType = "detail";
+            </script>
+        
+                  
+
+</head>
+<!-- tracing is initialized after the document is loaded ($(document).ready(initTracing);) --> 
+<body >	
+  <div id="contend">
+       <!-- 
+                class "object" needs to be added in order to IPIget can correctly identify it and calculate its position
+                id attribute of the objekt class is ID of the object
+       -->
+      <div class="object" id="13101" >
+		<h1>Palacký, František: Dìjiny národu èeského v Èechách a v Moravì</h1>
+                
+			<img  src="/nahled/13101-dejiny-narodu-ceskeho-v-cechach-a-v-morave.jpg" alt="Dìjiny národu èeského v Èechách a v Moravì" title="Dìjiny národu èeského v Èechách a v Moravì" class="float-left" />
+		<p>
+		Otisk dle pùv. vyd. B. Koèí, 1908. 1279 s. Dva polokožené svazky<br />	
+		</p>
+		<strong>Cena: 140  Kè</strong><br/>			
+    <!-- purchase related actions must be added manually either by onclick or similar html attributes or through document.addEventListener() -->    
+		<a href="purchase.php"  onclick="clickOnPurchaseButton();" value="pøejít k objednávce">Objednat knihu</a>
+    <!-- similarly the purchase() function needs to be triggered whenever the purchase is successfully finished -->
+      </div>
+ </div>
+
+</body>
+</html>

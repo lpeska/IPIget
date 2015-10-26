@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="cs">
+<head>
+<title>Antikvariát Ichtys - on-line prodej knih
+
+
+</title>
+
+<!-- jQuery is used in IPIget-->
+<script type="text/javascript" src="/jqueryui/js/jquery-1.7.1.min.js"></script>     
+    
+<!-- link IPIget component -->    
+<script language="JavaScript" type="text/javascript" src="IPIget/component/client-side/TraceUser.js"></script>  
+<script type="text/javascript" language="javascript" src="IPIget/component/client-side/AjaxRequest.js"></script>  
+
+<!-- static page parameters received from server side scripting:
+userID via cookie or login information
+objectID optional info whether page is about single object e.g. it is not a catalogue page
+sessionID count of the sessions of current user
+pageID identifier of the page. either directly containing page variables or they can be stored separately in the database
+pageType optional type of the page (index, catalogue, object detail...)
+-->
+            <script  type="text/javascript" language="javascript">
+                var userID = 251380 ;
+                var objectID = 0;
+                var pageID = "katalog.dejiny";    
+                var sessionID = 2;    
+                var pageType = "catalogue";
+            </script>
+        
+                  
+
+</head>
+
+<body <!-- tracing is initialized after the document is loaded ($(document).ready(initTracing);) --> >	
+		<div id="contend">
+		<h1>Seznam objektù</h1>
+                <!-- 
+                class "object" needs to be added as IPIget can correctly identify it and calculate its position
+                id attribute of the object class is ID of the object
+                -->
+               <div class="recomended object"  id="13101">
+                   <!-- optionally if you want to observe user navigational patterns between objects, use "objekt_link" class for all links goind to the object detail page -->
+                    <a class="object_link" href="/katalog/dejiny/dejiny-narodu-ceskeho-v-cechach-a-v-morave.html">Palacký, František: Dìjiny národu èeského v Èechác</a>
+                     <a class="object_link" href="/katalog/dejiny/dejiny-narodu-ceskeho-v-cechach-a-v-morave.html"><img height="100" src="/nahled/13101-dejiny-narodu-ceskeho-v-cechach-a-v-morave.jpg" alt="zobrazit detail knihy" /></a><br/>
+                   <b>cena: 140 Kè</b>
+                </div>
+
+               <div class="recomended object"  id="1475">
+                   <!-- optionally if you want to observe user navigational patterns between objects, use "objekt_link" class for all links goind to the object detail page -->
+                    <a class="object_link" href="/katalog/dejiny/remeslnictvo-a-zivnosti-xvi-veku-v-cechach.html">Winter, Zikmund: Øemeslnictvo a živnosti XVI. vìku</a>
+                     <a class="object_link" href="/katalog/dejiny/remeslnictvo-a-zivnosti-xvi-veku-v-cechach.html"><img height="100" src="/nahled/15282-remeslnictvo-a-zivnosti-xvi-veku-v-cechach.jpg" alt="zobrazit detail knihy" /></a><br/>
+                   <b>cena: 140 Kè</b>
+                </div>
+
+               <div class="recomended object"  id="1241">
+                   <!-- optionally if you want to observe user navigational patterns between objects, use "objekt_link" class for all links goind to the object detail page -->
+                    <a class="object_link" href="/katalog/dejiny/dejiny-evropy-.html">Duroselle: Dìjiny Evropy </a>
+                     <a class="object_link" href="/katalog/dejiny/dejiny-evropy-.html"><img height="100" src="/nahled/4540-dejiny-evropy-.jpg" alt="zobrazit detail knihy" /></a><br/>
+                   <b>cena: 350 Kè</b>
+                </div>
+
+              
+             </div>
+    
+
+
+
+</body>
+</html>
