@@ -5,7 +5,9 @@ The AJAX requests with current values of the preference indicators are posted pe
 The IPIget component is free to use and modify, however comes with no varanty.
 
 Key Parts of IPIget Component
+
 The IPIget component itself consists of three files:
+
 -	TraceUser.js contains source code identifying all context features and IPIs, populating them and arranging its dispatch to the server-side storage. Any changes on the set of collected behavior patterns should be done within this file. 
 -	AjaxRequest.js handles asynchronous connection to the server-side storage
 -	StoreVisit.php handles storing the traced behavior into the MySQL database
