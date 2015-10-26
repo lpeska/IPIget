@@ -17,14 +17,15 @@ Another three files were created in order to support deployment process:
 -	SampleCatalogue.html and SampleObjectDetail.html are sample pages illustrating deployment of the IPIget component
 
 Deployment of IPIget Component
+
 As the deployment of the IPIget component comprises of integration into uknown systems, possibly heterogenius, we can provide only general information about steps which needs to be executed in order to put the user tracing into operation. Following steps needs to be executed.
-1.	Download the IPIget component
-2.	Set database connection parameters on StoreVisit.php
-3.	Run sql query creating storage table (CreateTable.sql) on your server-side database
-4.	Link all client-side scripts to all pages, where the user tracing should be executed (see the examples in SampleCatalogue.html and SampleObjectDetail.html)
-5.	Update your webpages to properly identify blocks containing objects (add class attributes as shown in the SampleCatalogue.html)
-6.	Update your webpages to make informations about userID, pageID, objectID and pageType available. These information are beyond control of IPIget and must be assets from the server-side. PageID could be simple URL of the current page, users can be identified via cookie or login information.
-7.	Upload all changed files
+-	Download the IPIget component
+-	Set database connection parameters on StoreVisit.php
+-	Run sql query creating storage table (CreateTable.sql) on your server-side database
+-	Link all client-side scripts to all pages, where the user tracing should be executed (see the examples in SampleCatalogue.html and SampleObjectDetail.html)
+-	Update your webpages to properly identify blocks containing objects (add class attributes as shown in the SampleCatalogue.html)
+-	Update your webpages to make informations about userID, pageID, objectID and pageType available. These information are beyond control of IPIget and must be assets from the server-side. PageID could be simple URL of the current page, users can be identified via cookie or login information.
+-	Upload all changed files
 
 Further information on IPIget can be found in
 Peska, L.: IPIget – The Component for Collecting Implicit User Preference Indicators. In ITAT 2014, Ustav informatiky AV CR, 2014, 22-26, http://itat.ics.upjs.sk/workshops.pdf
@@ -36,6 +37,7 @@ Also, we will be happy to know about your work. If you write a paper using our
 component, please send us a copy.
 
 Contact: 
-Ladislav Peska
-Charles University in Prague, Czech Republic
+
+Ladislav Peska,
+Charles University in Prague, Czech Republic,
 peska@ksi.mff.cuni.cz
